@@ -2,7 +2,11 @@
 {-# LANGUAGE QuasiQuotes #-}
 {-# LANGUAGE OverloadedStrings #-}
 
-module Louis where
+module Louis
+  ( braillizeDynamicImage
+  , braillizeByteString
+  , braillizeFile
+  ) where
 
 import Data.Word
 import Data.Char
