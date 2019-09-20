@@ -2,6 +2,32 @@
 {-# LANGUAGE QuasiQuotes #-}
 {-# LANGUAGE OverloadedStrings #-}
 
+-- |
+-- Module      : Louis
+-- Copyright   : (c) Alexey Kutepov 2019
+-- License     : MIT
+-- Maintainer  : tsodingbiz@gmail.com
+-- Portability : portable
+--
+-- >>> import Louis
+-- >>> import qualified Data.Text as T
+-- >>> putStrLn . T.unpack . T.unlines =<< braillizeFile "image.png"
+-- ⠀⠀⠀⡸⠿⠿⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+-- ⠀⢀⣴⣶⣶⣶⣶⣶⣶⣦⣬⣉⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+-- ⠀⣸⣿⣿⣿⣿⣿⣿⣿⡿⢿⣿⡆⣿⣿⣿⣿⣿⣿⣿⣿⡿⠿⠿⠿⢿⣿⣿⣿⣿
+-- ⠀⣿⣿⣿⣿⣿⣿⣿⣿⠁⢠⣿⠡⠿⠿⠿⠿⣿⣿⣿⢃⣶⣾⣿⣷⣶⣶⣤⣍⡛
+-- ⡀⢻⣿⣿⣿⣿⣿⣿⣿⣤⣾⠋⠐⠲⠶⣦⣤⣌⡙⠋⢸⣿⠋⠙⣿⣿⣿⣿⣿⣿
+-- ⣿⣦⣭⣉⣉⣙⣛⣋⣉⣉⣅⣾⣿⣿⣷⣾⣿⣿⣿⡇⣿⡏⠀⢰⣿⣿⣿⣿⣿⣿
+-- ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣇⢹⣿⣾⣿⣿⣿⣿⣿⣿⣿
+-- ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣬⡙⠛⢿⣿⣿⣿⣿⣿
+-- ⣿⣿⣿⣿⣿⣿⣿⣿⣿⡝⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣬⣍⣛⠻⠿
+-- ⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃⣶⣶⣶⣦⡉⣰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+-- ⣿⣿⣿⣿⣿⣿⣿⣿⣯⣾⣿⣿⣿⣿⣇⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+-- ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+-- ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+-- ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+-- ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+
 module Louis
   ( braillizeDynamicImage
   , braillizeByteString

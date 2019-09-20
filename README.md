@@ -2,7 +2,10 @@
 
 Simple library for braillizing images
 
-```
+```console
+>>> import Louis
+>>> import qualified Data.Text as T
+>>> putStrLn . T.unpack . T.unlines =<< braillizeFile "image.png"
 ⠀⠀⠀⡸⠿⠿⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
 ⠀⢀⣴⣶⣶⣶⣶⣶⣶⣦⣬⣉⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
 ⠀⣸⣿⣿⣿⣿⣿⣿⣿⡿⢿⣿⡆⣿⣿⣿⣿⣿⣿⣿⣿⡿⠿⠿⠿⢿⣿⣿⣿⣿
