@@ -48,10 +48,10 @@ extra-source-files:  CHANGELOG.md
 
 library
   -- Modules exported by the library.
-  -- exposed-modules:
+  exposed-modules: Louis
 
   -- Modules included in this library but not exported.
-  other-modules:       Louis
+  -- other-modules:
 
   -- LANGUAGE extensions used by modules in this package.
   -- other-extensions:
