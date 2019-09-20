@@ -1,3 +1,5 @@
+[![Tsoding](https://img.shields.io/badge/twitch.tv-tsoding-purple?logo=twitch&style=for-the-badge)](https://www.twitch.tv/tsoding)
+
 # Louis
 
 Simple library for braillizing images
@@ -22,3 +24,10 @@ Simple library for braillizing images
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
 ```
+
+## Support
+
+You can support my work via
+
+- Twitch channel: https://www.twitch.tv/subs/tsoding
+- Patreon: https://www.patreon.com/tsoding
