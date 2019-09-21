@@ -12,16 +12,16 @@ name:                louis
 -- PVP summary:      +-+------- breaking API changes
 --                   | | +----- non-breaking API additions
 --                   | | | +--- code changes with no API change
-version:             0.1.0.0
+version:             0.1.0.1
 
 -- A short (one-line) description of the package.
 synopsis:            Turning images into text using Braille font
 
 -- A longer description of the package.
--- description:
+description:         Turning images into text using Braille font
 
 -- A URL where users can report bugs.
--- bug-reports:
+bug-reports:         https://github.com/tsoding/louis/issues
 
 -- The license under which the package is released.
 license:             MIT
@@ -30,11 +30,11 @@ license:             MIT
 license-file:        LICENSE
 
 -- The package author(s).
-author:              rexim
+author:              Alexey Kutepov
 
 -- An email address to which users can send suggestions, bug reports, and
 -- patches.
-maintainer:          reximkut@gmail.com
+maintainer:          tsodingbiz@gmail.com
 
 -- A copyright notice.
 -- copyright:
