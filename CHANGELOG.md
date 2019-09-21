@@ -1,5 +1,6 @@
 # Revision history for louis
 
-## 0.1.0.0 -- YYYY-mm-dd
+## 0.1.0.0 -- 2019-09-22
 
-* First version. Released on an unsuspecting world.
+* First version.
+* You can braillize files, ByteStrings-s, and DynamicImage-s of JuicyPixels.
